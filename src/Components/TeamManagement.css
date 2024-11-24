@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200..700&display=swap');
+
+body {
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.team-management {
+  width: 90%;
+  margin: 20px auto;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Button Styles */
+button {
+  padding: 6px 12px;
+  background-color: #4335A7;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5346ba;
+}
+
+.sort-btn,
+.table-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.add-user-btn,
+.delete-selected-btn {
+  margin: 10px 0;
+}
+
+/* Table Style */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #ede9e9;
+}
+
+.inactive-row {
+  background-color: #e0e0e0;
+  color: #666;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.status-badge.active {
+  background-color: #3aa346;
+}
+
+.status-badge.inactive {
+  background-color: #f44336;
+}
+
+.table-btn {
+  justify-content: center;
+  width: 100px;
+  padding: 8px;
+  font-size: 0.9em;
+}
+
+/* Popup Style */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+.formheadingDiv{
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+}
+.formheadingDiv button {
+  display: flex;
+  justify-content: center;
+
+}
+
+/* Form Style */
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  /* width: 100%; */
+}
+
+.error-input {
+  border: 2px solid #f44336;
+}
+
+.error {
+  color: #f44336;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* Header */
+.page-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sortfilter {
+  display: flex;
+  gap: 10px;
+}
+
+/* Responsive media query */
+@media (max-width: 768px) {
+  .page-heading {
+    font-size: 10px;
+    gap: 10px;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  .status-badge {
+    width: 70px;
+  }
+}
+
+@media (max-width: 574px) {
+  .page-heading {
+    width: 140%;
+    font-size: 10px;
+  }
+
+  
+
+  table {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 412px) {
+  .page-heading {
+    gap:10px;
+    width: 155%;
+    font-size: 10px;
+  }
+
+}
